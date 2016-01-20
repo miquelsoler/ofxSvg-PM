@@ -1,1 +1,1 @@
-# Official ofxSvg with the possibility to read path Ids
+# Official ofxSvg version that allows to read (pure) path Ids.
