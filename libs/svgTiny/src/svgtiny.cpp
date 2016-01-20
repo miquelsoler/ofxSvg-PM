@@ -533,7 +533,7 @@ svgtiny_code svgtiny_parse_rect(Poco::XML::Element *rect,
 	p[11] = y + height;
 	p[12] = svgtiny_PATH_CLOSE;
 
-    // TODO: Maybe at some point we'll have to add ids to rects as well.
+    // TODO: Maybe at some point we'll have to add ids to rects as well. Its current id is "".
 	return svgtiny_add_path(p, path_id, 13, &state);
 }
 
@@ -624,7 +624,7 @@ svgtiny_code svgtiny_parse_circle(Poco::XML::Element *circle,
 	p[30] = y;
 	p[31] = svgtiny_PATH_CLOSE;
 
-    // TODO: Maybe at some point we'll have to add ids to circles as well.
+	// TODO: Maybe at some point we'll have to add ids to circles as well. Its current id is "".
 	return svgtiny_add_path(p, path_id, 32, &state);
 }
 
@@ -717,7 +717,7 @@ svgtiny_code svgtiny_parse_ellipse(Poco::XML::Element *ellipse,
 	p[30] = y;
 	p[31] = svgtiny_PATH_CLOSE;
 
-    // TODO: Maybe at some point we'll have to add ids to circles as well.
+	// TODO: Maybe at some point we'll have to add ids to ellipses as well. Its current id is "".
 	return svgtiny_add_path(p, path_id, 32, &state);
 }
 
@@ -776,7 +776,7 @@ svgtiny_code svgtiny_parse_line(Poco::XML::Element *line,
 	p[5] = y2;
 	p[6] = svgtiny_PATH_CLOSE;
 
-    // TODO: Maybe at some point we'll have to add ids to circles as well.
+	// TODO: Maybe at some point we'll have to add ids to lines as well. Its current id is "".
 	return svgtiny_add_path(p, path_id, 7, &state);
 }
 
@@ -844,7 +844,7 @@ svgtiny_code svgtiny_parse_poly(Poco::XML::Element *poly,
 
 	//xmlFree(points);
 
-    // TODO: Maybe at some point we'll have to add ids to circles as well.
+	// TODO: Maybe at some point we'll have to add ids to polys as well. Its current id is "".
 	return svgtiny_add_path(p, path_id, i, &state);
 }
 
